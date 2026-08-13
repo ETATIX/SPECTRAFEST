@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#050507">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Spectra Fest 2026 - Konser Dewa 19 ft. Ari Lasso & Ello. 05 Desember 2026 di Lapangan Niti Mandala Renon, Denpasar.">
+<title>Spectra Fest 2026 — Dewa 19 ft. Ari Lasso & Ello | DewaTiket.id</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="poster.jpg" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎟️</text></svg>">
+
+<style>
+:root{
+    --bg:#050507; 
+    --card:rgba(255,255,255,.025); 
+    --card-h:rgba(255,255,255,.05);
+    --bdr:rgba(255,255,255,.06); 
+    --bdr-h:rgba(212,175,55,.4);
+    --t1:#fff; --t2:rgba(255,255,255,.65); --t3:rgba(255,255,255,.35);
+    --gold:#d4af37; --gold-l:#f5e7a0; --gold-d:#8a7022;
+    --red:#e50024;
+    --grd-gold:linear-gradient(135deg,#d4af37,#f5e7a0,#d4af37);
+    --grd-red:linear-gradient(135deg,#e50024,#990018);
+    --shadow:0 25px 70px rgba(0,0,0,.6);
+    --r:16px; --r-lg:28px; --t:.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --h:70px; --st:env(safe-area-inset-top,0px); --sb:env(safe-area-inset-bottom,0px);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--h) + 20px)}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--t1);min-height:100vh;padding-bottom:calc(130px + var(--sb));overflow-x:hidden;-webkit-font-smoothing:antialiased;font-weight:400}
+
+/* Ambient Background Lights */
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 10%,rgba(229,0,36,.08),transparent 40%),radial-gradient(circle at 85% 80%,rgba(212,175,55,.06),transparent 45%);pointer-events:none}
+body::after{content:'';position:fixed;inset:0;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none}
+
+/* Header */
+.header{position:sticky;top:0;z-index:1000;height:calc(var(--h) + var(--st));padding:var(--st) 28px 0;background:rgba(5,5,7,.7);backdrop-filter:blur(30px) saturate(150%);-webkit-backdrop-filter:blur(30px) saturate(150%);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bdr)}
+.header-left,.header-right{width:80px;display:flex;align-items:center}
+.header-left{justify-content:flex-start} .header-right{justify-content:flex-end;gap:8px}
+.logo{display:flex;align-items:center;height:36px;text-decoration:none;transition:var(--t)}
+.logo:hover{transform:scale(1.03)}
+.logo img{height:100%;width:auto;display:block;border-radius:4px}
+.icon-btn{width:42px;height:42px;border:1px solid var(--bdr);background:rgba(255,255,255,.02);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t)}
+.icon-btn:hover{background:var(--card-h);border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+
+/* Layout */
+.container{width:100%;max-width:820px;margin:auto;padding:40px 20px 0}
+
+/* Hero */
+.hero{position:relative;border-radius:var(--r-lg);overflow:hidden;margin:0 auto 32px;max-width:400px;box-shadow:var(--shadow);border:1px solid rgba(212,175,55,.15)}
+.hero::after{content:'';position:absolute;inset:0;border-radius:var(--r-lg);box-shadow:inset 0 0 50px rgba(0,0,0,.5);pointer-events:none;z-index:1}
+.poster{width:100%;height:auto;display:block;transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1)}
+.hero:hover .poster{transform:scale(1.05)}
+.hero-overlay{position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(5,5,7,.95),transparent);pointer-events:none;z-index:2}
+.event-badges{position:absolute;top:18px;left:18px;right:18px;display:flex;gap:8px;flex-wrap:wrap;z-index:3}
+.badge{background:rgba(5,5,7,.6);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);color:#fff;padding:6px 14px;border-radius:30px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px}
+.badge.live{background:var(--grd-red);border-color:transparent;box-shadow:0 4px 20px rgba(229,0,36,.3)}
+.badge.live::before{content:'';display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:6px;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.event-title{font-family:'Playfair Display',serif;font-size:46px;line-height:1.1;font-weight:800;margin-bottom:12px;letter-spacing:-1px;text-align:center;background:linear-gradient(180deg,#fff,rgba(255,255,255,.75));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.event-subtitle{text-align:center;font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-l);margin-bottom:40px;font-weight:500}
+
+/* Exclusive Card */
+.exclusive-card{position:relative;background:linear-gradient(145deg,rgba(212,175,55,.08),rgba(5,5,7,.4) 60%);border:1px solid rgba(212,175,55,.2);border-radius:var(--r-lg);padding:36px 28px;margin-bottom:40px;text-align:center;overflow:hidden;box-shadow:0 15px 50px rgba(0,0,0,.4)}
+.exclusive-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(212,175,55,.05),transparent 25%);animation:rotateBg 15s linear infinite;pointer-events:none}
+@keyframes rotateBg{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.exc-label{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.1);border:1px solid var(--gold-d);color:var(--gold-l);padding:8px 18px;border-radius:20px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:20px;position:relative;z-index:2}
+.exc-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:800;line-height:1.2;background:var(--grd-gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;position:relative;z-index:2;letter-spacing:1px}
+.exc-desc{font-size:14px;color:var(--t2);max-width:380px;margin:0 auto;position:relative;z-index:2;line-height:1.7;font-weight:300}
+
+/* Event Info */
+.event-info{display:flex;flex-direction:column;gap:16px;margin-bottom:48px;padding:28px;background:var(--card);backdrop-filter:blur(15px);border:1px solid var(--bdr);border-radius:var(--r-lg)}
+.info-row{display:flex;align-items:center;gap:16px;font-size:15px;font-weight:400}
+.info-icon{width:46px;height:46px;min-width:46px;background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.1);border-radius:14px;display:flex;align-items:center;justify-content:center;transition:var(--t)}
+.info-row:hover .info-icon{border-color:var(--gold);box-shadow:0 0 15px rgba(212,175,55,.1)}
+.info-icon svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.8}
+.instagram{color:var(--gold-l);font-weight:500}
+.share-btn{width:100%;border:1px solid rgba(255,255,255,.1);background:transparent;color:#fff;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;padding:16px;border-radius:14px;transition:var(--t);margin-top:8px;text-transform:uppercase;letter-spacing:2px}
+.share-btn:hover{background:rgba(212,175,55,.05);border-color:var(--gold);color:var(--gold-l)}
+.share-btn svg{width:16px;height:16px}
+
+/* Sections */
+.section{margin-bottom:48px;opacity:0;transform:translateY(30px);transition:all .9s cubic-bezier(0.16, 1, 0.3, 1)}
+.section.visible{opacity:1;transform:translateY(0)}
+.section-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;margin-bottom:24px;letter-spacing:-.5px;display:flex;align-items:center;gap:14px}
+.section-title::before{content:'';width:5px;height:30px;background:var(--grd-gold);border-radius:2px;box-shadow:0 0 10px rgba(212,175,55,.3)}
+.card{background:var(--card);backdrop-filter:blur(15px);border:1px solid var(--bdr);border-radius:var(--r-lg);padding:32px;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+.card h3{font-size:22px;margin-bottom:16px;font-weight:700;font-family:'Playfair Display',serif}
+.card p{font-size:15px;line-height:1.8;margin-bottom:18px;color:var(--t2);font-weight:300}
+.card p:last-child{margin-bottom:0}
+.bold{font-weight:600;color:#fff}
+
+/* Lineup */
+.lineup-card{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r-lg);padding:12px 28px}
+.lineup-item{display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--bdr);font-size:18px;font-weight:500;transition:var(--t);font-family:'Playfair Display',serif}
+.lineup-item:hover{padding-left:8px;color:var(--gold-l)}
+.lineup-item:last-child{border-bottom:0}
+.lineup-num{width:40px;height:40px;min-width:40px;background:transparent;border:1px solid var(--gold-d);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--gold);font-family:'Plus Jakarta Sans',sans-serif}
+.lineup-item:first-child .lineup-num{background:var(--grd-gold);color:#000;border-color:transparent}
+.lineup-item:last-child .lineup-num{border:1px dashed var(--bdr-h);color:var(--t3)}
+
+/* Terms */
+.terms ol{padding-left:26px;list-style:none;counter-reset:term}
+.terms li{font-size:14px;line-height:1.7;margin-bottom:16px;padding-left:16px;color:var(--t2);counter-increment:term;position:relative;font-weight:300}
+.terms li::before{content:counter(term);position:absolute;left:-26px;top:2px;width:20px;height:20px;background:transparent;border:1px solid var(--red);border-radius:50%;color:var(--red);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+.seatmap{width:100%;height:auto;display:block;border-radius:var(--r)}
+
+/* Tickets */
+.ticket-box{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r-lg);padding:28px;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+.ticket-heading{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--bdr);text-transform:uppercase;letter-spacing:2px;color:var(--t3)}
+.ticket-heading-badge{background:transparent;border:1px solid var(--gold);color:var(--gold-l);padding:5px 12px;border-radius:20px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;display:inline-flex;align-items:center;gap:6px}
+.ticket-heading-badge::before{content:'';width:5px;height:5px;background:var(--gold);border-radius:50%;animation:pulse 1.5s infinite}
+
+.ticket{background:transparent;border:1px solid var(--bdr);border-radius:var(--r);padding:20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:var(--t);position:relative;overflow:hidden}
+.ticket::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grd-gold);transform:scaleY(0);transition:transform .4s ease;transform-origin:top}
+.ticket:hover{border-color:rgba(212,175,55,.2)}
+.ticket.active{background:rgba(212,175,55,.03);border-color:rgba(212,175,55,.2);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.ticket.active::before{transform:scaleY(1)}
+
+.ticket-info{min-width:0;flex:1}
+.ticket-name{font-size:17px;font-weight:600;margin-bottom:6px;color:#fff;font-family:'Playfair Display',serif}
+.ticket-sub{font-size:12px;color:var(--t3);margin-bottom:10px;font-weight:400}
+.ticket-stock{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;padding:4px 10px;border-radius:6px;background:rgba(229,0,36,.1);color:#ff5070;border:1px solid rgba(229,0,36,.2);text-transform:uppercase;letter-spacing:1px;transition:var(--t)}
+.ticket-stock.low-stock{background:rgba(229,0,36,.2);border-color:rgba(229,0,36,.3);animation:pulse 1.5s infinite}
+.ticket-stock.sold-out{background:rgba(255,255,255,.05);color:var(--t3);border-color:var(--bdr)}
+.ticket-price{font-size:20px;font-weight:800;background:var(--grd-gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-top:8px;display:block}
+
+.ticket-controls{display:flex;align-items:center;gap:6px;flex-shrink:0;background:rgba(0,0,0,.2);padding:5px;border-radius:12px;border:1px solid var(--bdr)}
+.qty-btn{width:36px;height:36px;border-radius:8px;border:none;background:rgba(255,255,255,.03);color:#fff;font-size:18px;cursor:pointer;transition:var(--t);-webkit-appearance:none;appearance:none;display:flex;align-items:center;justify-content:center}
+.qty-btn:hover:not(:disabled){background:var(--gold);color:#000}
+.qty-btn:active:not(:disabled){transform:scale(.9)}
+.qty-btn:disabled{opacity:.2;cursor:not-allowed}
+.qty{min-width:24px;text-align:center;font-size:16px;font-weight:700;color:#fff}
+
+/* Bottom Bar */
+.bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:1000;background:rgba(5,5,7,.85);backdrop-filter:blur(30px);padding:16px 20px calc(16px + var(--sb));border-top:1px solid var(--bdr)}
+.bottom-inner{max-width:820px;margin:auto;height:80px;background:linear-gradient(90deg,#fff,rgba(255,255,255,.9));border-radius:18px;overflow:hidden;display:flex;align-items:stretch;box-shadow:0 15px 50px rgba(0,0,0,.7)}
+.bottom-price{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 26px;color:#111;min-width:0}
+.bottom-label{font-size:10px;font-weight:600;color:#666;margin-bottom:2px;text-transform:uppercase;letter-spacing:2px;display:flex;align-items:center;gap:10px}
+.qty-badge{background:#111;color:var(--gold-l);padding:3px 10px;border-radius:8px;font-size:10px;font-weight:700;display:none}
+.qty-badge.show{display:inline-block;animation:popIn .3s}
+@keyframes popIn{0%{transform:scale(0)}80%{transform:scale(1.1)}100%{transform:scale(1)}}
+.bottom-total{font-size:26px;font-weight:800;letter-spacing:-.5px;font-variant-numeric:tabular-nums;font-family:'Playfair Display',serif}
+.bottom-total.bump{animation:bump .3s}
+@keyframes bump{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+.buy-btn{width:42%;border:0;background:linear-gradient(135deg,#111,#333);color:var(--gold-l);font-size:14px;font-weight:700;cursor:pointer;transition:var(--t);-webkit-appearance:none;appearance:none;padding:0 24px;white-space:nowrap;letter-spacing:2px;text-transform:uppercase;position:relative;overflow:hidden}
+.buy-btn::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(212,175,55,.2),transparent);transition:.5s}
+.buy-btn:hover::after{left:100%}
+.buy-btn:active{transform:scale(.98)}
+
+/* UI Elements */
+.loading-overlay{position:fixed;inset:0;z-index:9999;background:rgba(5,5,7,.98);backdrop-filter:blur(30px);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;opacity:0;visibility:hidden;transition:opacity .4s}
+.loading-overlay.active{opacity:1;visibility:visible}
+.loader{width:80px;height:80px;position:relative}
+.loader div{position:absolute;inset:0;border:2px solid transparent;border-radius:50%}
+.loader div:nth-child(1){border-top-color:var(--gold);animation:spin 1s linear infinite}
+.loader div:nth-child(2){inset:10px;border-right-color:var(--red);animation:spin 1.5s linear infinite reverse}
+.loader div:nth-child(3){inset:20px;border-bottom-color:#fff;animation:spin 2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:16px;font-weight:500;letter-spacing:2px;text-transform:uppercase}
+.loading-dots::after{content:'';animation:dots 1.5s steps(4) infinite}
+@keyframes dots{0%{content:''}25%{content:'.'}50%{content:'..'}75%{content:'...'}}
+
+.toast{position:fixed;top:calc(90px + var(--st));left:50%;transform:translateX(-50%) translateY(-100px);background:rgba(255,255,255,.95);backdrop-filter:blur(10px);color:#111;padding:14px 24px;border-radius:12px;font-size:14px;font-weight:600;z-index:3000;opacity:0;transition:transform .4s,opacity .4s;max-width:90vw;text-align:center;box-shadow:0 15px 40px rgba(0,0,0,.3)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+.to-top{position:fixed;bottom:calc(130px + var(--sb));right:20px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.03);backdrop-filter:blur(10px);border:1px solid var(--bdr-h);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:500;opacity:0;visibility:hidden;transform:translateY(20px);transition:var(--t)}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{border-color:var(--gold);color:var(--gold)}
+.to-top svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.5}
+
+@media(max-width:600px){
+    .container{padding:30px 16px 0}
+    .event-title{font-size:36px}
+    .event-subtitle{font-size:12px}
+    .exc-title{font-size:26px}
+    .section-title{font-size:24px}
+    .bottom-inner{height:70px}
+    .bottom-total{font-size:22px}
+    .buy-btn{font-size:12px;letter-spacing:1px;padding:0 16px}
+    .ticket-controls{gap:2px}
+    .qty-btn{width:32px;height:32px;font-size:16px}
+    .logo{height:30px}
+    .card{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <button type="button" class="icon-btn" id="backBtn" aria-label="Kembali">
+            <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+    </div>
+    <a href="index.html" class="logo" aria-label="DewaTiket Home"><img src="logo.png" alt="DewaTiket Logo"></a>
+    <div class="header-right">
+        <button type="button" class="icon-btn" id="searchBtn" aria-label="Cari">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        </button>
+        <button type="button" class="icon-btn" id="menuBtn" aria-label="Menu">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h11M4 18h7"/></svg>
+        </button>
+    </div>
+</header>
+
+<main class="container">
+    <div class="hero">
+        <div class="event-badges">
+            <span class="badge live">Konser</span>
+            <span class="badge">05 Des 2026</span>
+            <span class="badge">Bali</span>
+        </div>
+        <img src="poster.jpg" alt="Poster Spectra Fest 2026" class="poster" loading="eager" fetchpriority="high">
+        <div class="hero-overlay"></div>
+    </div>
+    
+    <h1 class="event-title">Spectra Fest 2026</h1>
+    <p class="event-subtitle">Dewa 19 ft. Ari Lasso & Ello</p>
+    
+    <div class="exclusive-card">
+        <div class="exc-label">Last Chance</div>
+        <h2 class="exc-title">STOK TERAKHIR DIBUKA</h2>
+        <p class="exc-desc">Kesempatan emas bagi Anda yang terlewat presale sebelumnya. Hanya 20 tiket tersisa untuk merasakan malam penuh nostalgia bersama Dewa 19. Amankan tempatmu sekarang sebelum habis terjual.</p>
+    </div>
+    
+    <div class="event-info">
+        <div class="info-row">
+            <span class="info-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <span>Sabtu, 05 Desember 2026</span>
+        </div>
+        <div class="info-row">
+            <span class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span>Lapangan Niti Mandala Renon — Denpasar</span>
+        </div>
+        <div class="info-row">
+            <span class="info-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+            <span class="instagram">@spectrafest.official</span>
+        </div>
+        <button type="button" class="share-btn" id="shareBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.5-4.5M8.2 13.2l7.5 4.5"/></svg>
+            Bagikan Event
+        </button>
+    </div>
+    
+    <section class="section" id="about">
+        <h2 class="section-title">Tentang Event</h2>
+        <div class="card">
+            <h3>Spectra Festival 2026</h3>
+            <p>Bukan sekadar tentang siapa yang tampil di atas panggung, tetapi tentang bagaimana satu malam mampu menyatukan ribuan orang dalam energi yang sama. Spectra Fest 2026 hadir sebagai perayaan musik, nostalgia, dan pengalaman.</p>
+            <p>Tahun ini, <span class="bold">Dewa 19 ft. Ari Lasso & Ello</span> mempersembahkan penampilan spesial. Perpaduan legenda yang telah melahirkan karya abadi dan menjadi soundtrack berbagai generasi.</p>
+            <p>Masih akan ada deretan <span class="bold">Special Guest Star</span> yang segera diumumkan. Nama-nama terbaik akan melengkapi kemeriahan Spectra Fest 2026.</p>
+            <p>General Sale dibuka 13 Agustus 2026 hanya di DewaTiket.id</p>
+            <p><span class="bold">Headliner:</span> Dewa 19 ft. Ari Lasso & Ello<br><span class="bold">Special Guest Star:</span> TBA</p>
+        </div>
+    </section>
+    
+    <section class="section" id="lineup">
+        <h2 class="section-title">Line Up</h2>
+        <div class="lineup-card">
+            <div class="lineup-item"><span class="lineup-num">1</span><span>Dewa 19 ft. Ari Lasso & Ello</span></div>
+            <div class="lineup-item"><span class="lineup-num">?</span><span>Special Guest Star (TBA)</span></div>
+        </div>
+    </section>
+    
+    <section class="section" id="terms">
+        <h2 class="section-title">Syarat & Ketentuan</h2>
+        <div class="card terms">
+            <ol>
+                <li>Tiket HANYA dibeli melalui dewatiket.id.</li>
+                <li>Pembelian di luar dewatiket.id TIDAK MENJADI TANGGUNG JAWAB PROMOTOR.</li>
+                <li>Usia ≤ 12 tahun WAJIB didampingi orang tua/wali.</li>
+                <li>Anak usia ≥ 5 tahun wajib membeli tiket.</li>
+                <li>Harga sudah termasuk pajak.</li>
+                <li>Isi data SESUAI identitas diri.</li>
+                <li>Tiket yang sudah dibeli TIDAK dapat dikembalikan (NO REFUND).</li>
+                <li>QR Code muncul pada periode penukaran gelang & hanya dapat di-scan 1 kali.</li>
+                <li>Gelang tiket untuk <span class="bold">Single Entry</span>.</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section class="section" id="seatmap">
+        <h2 class="section-title">Denah Tiket</h2>
+        <div class="card" style="padding:12px">
+            <img src="seatmap.jpg" alt="Denah Tiket" class="seatmap" loading="lazy">
+        </div>
+    </section>
+    
+    <section class="section" id="tickets">
+        <h2 class="section-title">Pilih Tiket</h2>
+        <div class="ticket-box" id="ticketBox">
+            <div class="ticket-heading">
+                <span>Presale Tickets</span>
+                <span class="ticket-heading-badge">Tersedia</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<button type="button" class="to-top" id="toTop" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="bottom-bar">
+    <div class="bottom-inner">
+        <div class="bottom-price">
+            <div class="bottom-label">
+                <span id="labelText">Mulai Dari</span>
+                <span class="qty-badge" id="qtyBadge">0 tiket</span>
+            </div>
+            <div class="bottom-total" id="bottomPrice" aria-live="polite">Rp220.000</div>
+        </div>
+        <button type="button" class="buy-btn" id="buyBtn">Beli Tiket</button>
+    </div>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"><div></div><div></div><div></div></div>
+    <div class="loading-text">Memproses Pesanan<span class="loading-dots"></span></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+// State Management
+const tickets = {
+    presaleFest: { name: "Presale — Festival", price: 220000, stock: 7, qty: 0, sub: "Akses area Festival · Berdiri" },
+    presaleSuperFest: { name: "Presale — Super Festival", price: 330000, stock: 12, qty: 0, sub: "Akses depan panggung · Berdiri" }
+};
+const MIN_PRICE = 220000;
+
+// DOM References
+const $ = id => document.getElementById(id);
+const priceEl = $("bottomPrice"), badgeEl = $("qtyBadge"), labelEl = $("labelText"), 
+      buyBtnEl = $("buyBtn"), toastEl = $("toast"), toTopEl = $("toTop"),
+      ticketBoxEl = $("ticketBox");
+
+let toastTimer;
+
+// Utility Functions
+const rupiah = n => "Rp" + n.toLocaleString("id-ID");
+
+function showToast(m) {
+    toastEl.textContent = m;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 2800);
+}
+
+// Render Tickets Dynamically (Integrity Flow)
+function renderTickets() {
+    ticketBoxEl.innerHTML = `
+        <div class="ticket-heading">
+            <span>Presale Tickets</span>
+            <span class="ticket-heading-badge">Tersedia</span>
+        </div>
+    `;
+    
+    for (const [id, t] of Object.entries(tickets)) {
+        const isSoldOut = t.stock === 0;
+        const isLowStock = t.stock <= 5 && !isSoldOut;
+        
+        const ticketEl = document.createElement("div");
+        ticketEl.className = "ticket";
+        ticketEl.id = `ticket-${id}`;
+        ticketEl.innerHTML = `
+            <div class="ticket-info">
+                <div class="ticket-name">${t.name}</div>
+                <div class="ticket-sub">${t.sub}</div>
+                <div class="ticket-price">${rupiah(t.price)}</div>
+                <div class="ticket-stock ${isLowStock ? 'low-stock' : ''} ${isSoldOut ? 'sold-out' : ''}">
+                    ${isSoldOut ? ' Sold Out' : '⚠️ Tersisa ' + t.stock + ' Tiket'}
+                </div>
+            </div>
+            <div class="ticket-controls">
+                <button type="button" class="qty-btn dec" data-id="${id}" ${isSoldOut ? 'disabled' : ''} aria-label="Kurangi tiket">−</button>
+                <span class="qty" id="qty-${id}">${t.qty}</span>
+                <button type="button" class="qty-btn inc" data-id="${id}" ${isSoldOut ? 'disabled' : ''} aria-label="Tambah tiket">+</button>
+            </div>
+        `;
+        ticketBoxEl.appendChild(ticketEl);
+    }
+}
+
+// Update Total & State
+function updateTotal() {
+    let t = 0, c = 0;
+    for (const v of Object.values(tickets)) { t += v.price * v.qty; c += v.qty; }
+    
+    priceEl.textContent = rupiah(c ? t : MIN_PRICE);
+    priceEl.classList.remove("bump");
+    void priceEl.offsetWidth; // Trigger reflow
+    if (c > 0) priceEl.classList.add("bump");
+    
+    badgeEl.textContent = c + " tiket";
+    badgeEl.classList.toggle("show", c > 0);
+    labelEl.textContent = c > 0 ? "Total" : "Mulai Dari";
+    buyBtnEl.textContent = c > 0 ? `Beli ${c} Tiket` : "Beli Tiket";
+}
+
+// Handle Quantity Changes via Event Delegation
+ticketBoxEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".qty-btn");
+    if (!btn || btn.disabled) return;
+
+    const id = btn.dataset.id;
+    const t = tickets[id];
+    if (!t) return;
+
+    const isInc = btn.classList.contains("inc");
+    
+    if (isInc) {
+        if (t.qty >= t.stock) {
+            showToast("⚠️ Maaf, stok tiket tidak mencukupi.");
+            return;
+        }
+        t.qty++;
+    } else {
+        if (t.qty === 0) return;
+        t.qty--;
+    }
+
+    // Update UI
+    $(`qty-${id}`).textContent = t.qty;
+    $(`ticket-${id}`).classList.toggle("active", t.qty > 0);
+    
+    // Disable inc button if reaching stock limit
+    const incBtn = $(`ticket-${id}`).querySelector(".inc");
+    incBtn.disabled = (t.qty >= t.stock);
+
+    updateTotal();
+});
+
+// Buy Action
+buyBtnEl.addEventListener("click", () => {
+    const sel = []; let tot = 0;
+    for (const [type, t] of Object.entries(tickets)) {
+        if (t.qty > 0) { sel.push({type, name: t.name, qty: t.qty, price: t.price}); tot += t.qty * t.price; }
+    }
+    
+    if (!sel.length) {
+        showToast("⚠️ Silakan pilih jumlah tiket terlebih dahulu!");
+        $("tickets").scrollIntoView({behavior:"smooth", block:"start"});
+        return;
+    }
+    
+    try {
+        localStorage.setItem("selectedTickets", JSON.stringify(sel));
+        localStorage.setItem("ticketTotal", String(tot));
+    } catch(e) { showToast("Gagal menyimpan pesanan"); return; }
+    
+    $("loadingOverlay").classList.add("active");
+    setTimeout(() => { window.location.href = "./form.html"; }, 1500);
+});
+
+// Share Feature
+ $("shareBtn").addEventListener("click", async () => {
+    const d = {title:"Spectra Fest 2026", text:"Spectra Fest 2026 - 05 Desember 2026, Lapangan Niti Mandala Renon Denpasar", url:window.location.href};
+    if (navigator.share) { try { await navigator.share(d); } catch(e) {} return; }
+    try {
+        if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(window.location.href);
+        else {
+            const ta = document.createElement("textarea");
+            ta.value = window.location.href;
+            ta.style.cssText = "position:fixed;opacity:0;left:-9999px";
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand("copy");
+            ta.remove();
+        }
+        showToast("Link event berhasil disalin ✓");
+    } catch(e) { showToast("Gagal menyalin link"); }
+});
+
+// Header Buttons
+ $("backBtn").addEventListener("click", () => window.history.back());
+ $("searchBtn").addEventListener("click", () => showToast("Fitur pencarian segera hadir 🔍"));
+ $("menuBtn").addEventListener("click", () => showToast("Menu segera hadir ☰"));
+
+// Scroll to Top
+ $("toTop").addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+
+// Intersection Observer for Animations
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+        if (en.isIntersecting) { en.target.classList.add("visible"); obs.unobserve(en.target); }
+    });
+}, {threshold: 0.1});
+
+window.addEventListener("scroll", () => {
+    toTopEl.classList.toggle("show", window.pageYOffset > 500);
+}, {passive: true});
+
+// Initialize App
+document.addEventListener("DOMContentLoaded", () => {
+    renderTickets();
+    updateTotal();
+    document.querySelectorAll(".section").forEach(s => obs.observe(s));
+});
+</script>
+</body>
+</html>
